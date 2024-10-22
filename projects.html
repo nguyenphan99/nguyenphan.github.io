@@ -72,7 +72,7 @@
 							</header> -->
 							<ol>
 							<li><h2><a style="color:rgb(0, 85, 255);" href="#CAMO-FS">LoGoViT</a></h2></li>
-							<li><h2><a style="color:rgb(0, 85, 255);" href="#InstSynth">APA</a></h2></li>
+							<li><h2><a style="color:rgb(0, 85, 255);" href="#InstSynth">Adaptive Proxy Anchor</a></h2></li>
 							<li><h2><a style="color:rgb(0, 85, 255);" href="#LTSP">Label Transfer Scene Parser</a></h2></li>
 							<li><h2><a style="color:rgb(0, 85, 255);" href="#CE-OST">Missing Item</a></h2></li>
 							</ol>
@@ -119,7 +119,7 @@
 							<header>
 								<div class="title">
 									<h2><a href="#">Label Transfer Scene Parser</a></h2>
-									<p>Nighttime Scene Understanding</p>
+									<p>Adaptive Proxy Anchor Loss for Deep Metric Learning</p>
 								</div>
 								<div class="meta">
 									<time class="published">Sep 2024</time>
@@ -127,28 +127,24 @@
 							</header>
 								<a href="#" class="image featured"><img src="images\ltsp_project.jpg" alt=""  /></a>
 
-								<p align="justify">Semantic segmentation plays a crucial role in traffic scene understanding, especially in nighttime condition. 
-								This paper tackles the task of semantic segmentation on nighttime scenes. The largest challenge of this task is the lack of 
-								annotated nighttime images to train a deep learning-based scene parser. The existing annotated datasets are abundant in daytime 
-								condition but scarce in nighttime due to the high cost. Thus, we propose a novel Label Transfer Scene Parser (LTSP) framework 
-								for nighttime scene semantic segmentation by leveraging daytime annotation transfer. Our framework performs segmentation in 
-								the dark without training on real nighttime annotated data. In particular, we propose translating daytime images to 
-								nighttime condition to obtain more data with annotation in an efficient way. In addition, we utilize the pseudo-labels 
-								inferred from unlabeled nighttime scenes to further train the scene parser. The novelty of our work is the ability to 
-								perform nighttime segmentation via daytime annotated label and nighttime synthetic versions of the same set of images. 
-								The extensive experiments demonstrate the improvement and efficiency of our scene parser over the state-of-the-art methods 
-								with the similar semi-supervised approach on the benchmark of Nighttime Driving Test dataset. Notably, our proposed method 
-								utilizes only one tenth of the amount of labeled and unlabeled data in comparison with the previous methods.</p>
+								<p align="justify">Deep metric learning (or simply called metric learning) uses the deep neural network to learn the representation of images, 
+									leading to widely used in many applications, e.g. image retrieval and face recognition. 
+									In the metric learning approaches, proxy anchor takes advantage of proxy-based and pair-based approaches to 
+									enable fast convergence time and robustness to noisy labels. However, in training the proxy anchor, 
+									selecting the hyperparameter margin is important to achieve a good performance. This selection requires expertise and is time-consuming. 
+									This paper proposes a novel method to learn the margin while training the proxy anchor approach adaptively. 
+									The proposed adaptive proxy anchor simplifies the hyperparameter tuning process while advancing the proxy anchor. 
+									We achieve state of the art on three public datasets with a noticeably faster convergence time.</p>
 								<p align="centering">
-									<a style="color:rgb(0, 85, 255);" href="https://github.com/danhntd/Label_Transfer_Scene_Parser" class="button medium">Code</a>
+									<a style="color:rgb(0, 85, 255);" href="https://github.com/tks1998/Adaptive-Proxy-Anchor" class="button medium">Code</a>
 								</p>
 
 								<b>Reference</b>:
 								<blockquote>
-									<b>Thanh-Danh Nguyen</b>, Nguyen Phan, Tam V. Nguyen†, Vinh-Tiep Nguyen, and Minh-Triet Tran, 
-										“Nighttime Scene Understanding with Label Transfer Scene Parser”,
-                                        Image and Vision Computing, Sep 2024.
-										[<a style="color:rgb(0, 85, 255);" href="https://doi.org/10.1016/j.imavis.2024.105257">DOI</a>]
+									<b>Nguyen Phan</b>*, Sen Tran, Ta Duc Huy, Soan T. M. Duong, and Chanh D. Tr. Nguyen, Trung Bui, Steven Q.H. Truong,
+										“Adaptive Proxy Anchor Loss for Deep Metric Learning”,
+                                        ICIP, 2022.
+<!-- 										[<a style="color:rgb(0, 85, 255);" href="https://doi.org/10.1016/j.imavis.2024.105257">DOI</a>] -->
 								</blockquote>
 						</article>
 
